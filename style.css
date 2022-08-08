@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;500;700&display=swap");
+
+:root {
+  /* Main colors */
+  --mainColor: #ff9d8a;
+  --secondaryColor: #2D4263;
+  --thirdColor: #adc8ff;
+  --white: #FFFFFF;
+  
+  /* Text colors */
+  --mainTextColor: #40414d;
+  --secondaryTextColor: #aaaaaa;
+
+  /* Light color */
+  --lightColor: #f4f5f8;
+  /* Dark color */
+  --darkColor: #082032;
+
+  /* Main font */
+  --defaultFont: "Roboto", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#test {
+    border: 2px solid orange;
+  }
+
+body {
+  display: flex;
+  font-family: var(--defaultFont);
+  background-image: url(./crypcroll-bg.png);
+  background-size: cover;
+  -webkit-animation: fadein 2s;
+  animation: fadein 2s;
+  overflow-x: hidden;
+}
+
+.btn{
+    cursor: pointer;
+    width: max-content;
+    border-radius: 25px;
+    font-size: 1rem;
+    padding: 7px 7px 7px 30px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    white-space: nowrap;
+    background: rgb(251,255,151);
+    background: linear-gradient(90deg, #fbff97e5 15%, #ff7647 48%, #8f00ff 100%);
+    transition: 300ms;
+}
+
+.btn2{
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+    cursor: pointer;
+}
+
+.btn2 > span:nth-child(1){
+    position: relative;
+    background: none;
+    padding: 8px;
+    border: 1px solid white ;
+    border-radius: 99px;
+    color: white;
+    margin-right: 1rem;
+    transition: 300ms all;
+}
+
+.vt-bar{
+    position: absolute;
+    height: 5rem;
+    width: 1px;
+    background-color: white;
+    transform: translate(21px, 60px);
+    transition: 300ms;
+}
+
+.btn2 > span:nth-child(1):hover{
+    background: white;
+    border: none;
+    color: purple;
+}
+
+.btn:hover{
+    background: #8f00ff;
+}
+
+.circle-btn{
+    color: purple;
+    background-color: white;
+    border-radius: 99px;
+    margin-left: 20px;
+    align-items: center;
+}
+
+h1, h2{
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+p{
+    color: var(--secondaryTextColor);
+}
+
+nav > ul > li {
+    padding: 10px;
+    border-radius: 5px;
+    transition: 1s all;
+    list-style-type: none;  
+    cursor: pointer;
+    
+  }
+
+nav > ul > li:hover {
+    background: linear-gradient(90deg, rgba(251,255,151,1) 16%, rgba(255,118,71,1) 48%, rgba(143,0,255,1) 100%);
+    
+  }
+
+main{
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 5rem;
+    justify-content: space-between;
+    background:rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.gradient-color{
+    background: linear-gradient(90deg, rgba(251,255,151,1) 16%, rgba(255,118,71,1) 48%, rgba(143,0,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.icon{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 10px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.stat{
+    display: flex;
+}
+
+.stat > div > h2{
+    margin-right: 3rem;
+}
+
+aside{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+aside > nav{
+    width: 100%;
+}
+
+aside > nav > ul{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 2rem;
+}
+aside > nav > ul > li{
+    color: var(--secondaryTextColor);
+    display: flex;
+    align-items: center;
+    color: var(--white);
+}
+
+.vl {
+    border-left: 1px solid var(--secondaryTextColor);
+    height: 20px;
+    margin: auto 20px;
+  }
